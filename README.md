@@ -19,4 +19,9 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Tuto links
+
+- [portfolio and nuxt](https://itnext.io/building-the-ultimate-portfolio-site-with-nuxt-js-and-netlify-beautiful-blazing-fast-100-seod-102913a60cfd)
+- [deploying on github](https://fr.nuxtjs.org/faq/github-pages/)
+- [gitppages](https://pages.github.com/)
+- [nuxt](https://fr.nuxtjs.org/guide/directory-structure)
