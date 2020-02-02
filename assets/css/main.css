@@ -5,6 +5,10 @@
     --tertiary-color: #F8F13A;
     --accent-1 : #39D2CA;
     --accent-2 : #378498;
+
+    --primary-font:'Oxygen';
+    --secondary-font:'Montserrat'
+
   }
   
   
@@ -22,8 +26,14 @@
 
 body {
     background-color: var(--secondary-color);
-    color: var(--accent-1);
+    font-family: var(--secondary-font), sans-serif;
 }
+
+h1, h2 {
+  font-family: var(--primary-font), sans-serif;  
+  color: var(--accent-1);
+}
+
 *,
 *:before,
 *:after {

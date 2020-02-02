@@ -1,45 +1,31 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        A static portfolio
-      </h2>
+      <h1 class="title">portfolio</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula
+        hendrerit ex, in pulvinar leo porttitor a. Aliquam erat volutpat. Orci
+        varius natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Nunc scelerisque ex vel ipsum finibus pulvinar. Donec
+        libero erat, cursus vel feugiat nec, malesuada eu mi. Pellentesque vitae
+        imperdiet neque. Nulla luctus elit eget ex efficitur blandit. Etiam
+        porta aliquet dolor vitae aliquam. Morbi vehicula porttitor hendrerit.
+        Sed condimentum fringilla odio. Suspendisse fermentum gravida eros
+        faucibus placerat. Duis varius elit vitae magna pulvinar porttitor.
+        Pellentesque vel tortor sit amet felis porta semper ut in lacus.
+        Praesent faucibus sem facilisis, finibus enim id, blandit urna. Class
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos. Nam at feugiat urna, nec vestibulum lacus. Donec ut
+        consequat ligula, a accumsan neque. Cras ullamcorper neque eget sodales
+        luctus. Nullam eget nibh in libero elementum aliquam. Donec vitae nisi
+        nec metus hendrerit fermentum. Nullam sit amet semper enim.
+      </p>
     </div>
   </div>
 </template>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<script>
+export default {
+  layout: 'flexible'
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: var(--accent-1);
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: var(--accent-2);
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+</script>

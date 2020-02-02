@@ -57,6 +57,7 @@ section {
   background-color: var(--secondary-color);
   order: 1;
   flex: 3;
+  margin: 10px;
 }
 
 aside {
