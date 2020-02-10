@@ -1,5 +1,12 @@
 export default {
   mode: 'universal',
+  generate:{
+    routes:[
+      '/authors/thorn',
+      '/authors/boulet',
+      '/authors/nepsie'
+    ]
+  },
   /*
    ** Headers of the page
    */

@@ -1,0 +1,23 @@
+:root {
+  --main-color: #a3b3a9;
+  --color-1: #c5b88b;
+  --color-2: #dfa784;
+  --accent-1: #9f986a;
+  --accent-2: #84836e;
+}
+
+body {
+  background-color: var(--main-color);
+  color: var(--accent-2);
+  font-family: var(--font-main);
+}
+
+h1 {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  font-weight: 300;
+  font-size: 100px;
+  color: var(--color-2);
+  letter-spacing: 1px;
+}
