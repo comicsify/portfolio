@@ -25,3 +25,4 @@ $ yarn generate
 - [deploying on github](https://fr.nuxtjs.org/faq/github-pages/)
 - [gitppages](https://pages.github.com/)
 - [nuxt](https://fr.nuxtjs.org/guide/directory-structure)
+- [Building dynamic route](https://css-tricks.com/creating-dynamic-routes-in-a-nuxt-application/)

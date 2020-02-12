@@ -1,11 +1,9 @@
+import * as authors from './helpers/authors.js'
+
 export default {
   mode: 'universal',
-  generate:{
-    routes:[
-      '/authors/thorn',
-      '/authors/boulet',
-      '/authors/nepsie'
-    ]
+  generate: {
+    routes: authors.listURL
   },
   /*
    ** Headers of the page
@@ -63,6 +61,10 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      config.node = {
+        fs: 'empty'
+      }
+    }
   }
 }

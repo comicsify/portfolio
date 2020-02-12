@@ -3,13 +3,8 @@ export default {
   name: `page-author`,
   data() {
     return {
-      name: ``
+      name: `Name`
     }
-  },
-  asyncData(nuxtContext) {
-    const { params } = nuxtContext
-    const { name } = params
-    return { name }
   }
 }
 </script>
