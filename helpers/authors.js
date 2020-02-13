@@ -18,5 +18,5 @@ export async function list() {
 
 export async function listURL() {
   const authorList = await list()
-  return authorList.map( author => `/author/${author}`)
+  return authorList.map((author) => `/author/${author}`)
 }
