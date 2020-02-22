@@ -34,3 +34,19 @@ $ yarn generate
 - [Typical flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox)
 - [Flex box pattern](https://tobiasahlin.com/blog/common-flexbox-patterns/)
 - [pre-rendering dynamic route](https://medium.com/javascript-in-plain-english/generate-static-websites-with-nuxt-4fd0491340e)
+
+## Note from Authors 
+
+### Thorn
+
+### Boulet 
+
+Pour moi ce serait surtout une histoire de supprimer des trucs plus que d'en ajouter.
+Par exemple, le champ "commentaires", les liens, le calendrier...
+
+Moi dans l'idéal il y aurait une mise en page ultra simple, avec un toggle anglais/français, avec genre 3 onglets:
+-Les notes
+-Les archives (sans date, mais avec juste l'ordre de publication et le système de recherche par mots-clefs)
+-Une carte de visite: une présentation sobre avec les liens vers les réseaux sociaux et un champ "contact"
+
+Moi la fonctionnalité qui serait top serait un bouton "acheter les livres numériques" en bas de page pour pouvoir vendre les .pdf avec un système de paiement !

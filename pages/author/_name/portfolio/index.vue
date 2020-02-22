@@ -1,7 +1,7 @@
 <script>
 export default {
-  name: `page-stories`,
-  layout: 'blog',
+  name: `page-author-portfolio`,
+  layout: 'portfolio',
   data() {
     return {
       name: `${this.$route.params.name}`
@@ -11,5 +11,5 @@ export default {
 </script>
 
 <template>
-  <div>Bienvenue sur la liste des histoires de {{ name }}</div>
+  <div>Bienvenue sur le porfolio de {{ name }}</div>
 </template>

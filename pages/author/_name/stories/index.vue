@@ -4,7 +4,8 @@ export default {
   layout: 'blog',
   data() {
     return {
-      name: `${this.$route.params.name}`
+      name: `${this.$route.params.name}`,
+      storyId: `${this.$route.params.storyId}`
     }
   }
 }
