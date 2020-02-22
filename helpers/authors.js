@@ -9,9 +9,8 @@ export async function list() {
     }
   })
 
-  const res = await client.get(
-    `https://${process.env.API_URL}/${process.env.API_VERSION}/${process.env.CLOUD_NAME}/folders`
-  )
+  const srcUrl = `https://${process.env.API_URL}/${process.env.API_VERSION}/${process.env.CLOUD_NAME}/folders`
+  const res = await client.get(srcUrl)
   const list = res.data.folders.map((folder) => folder.name)
   return list
 }
