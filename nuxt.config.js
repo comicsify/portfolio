@@ -1,7 +1,17 @@
 import * as authors from './helpers/authors.js'
 
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/portfolio/'
+        }
+      }
+    : {}
+
 export default {
   mode: 'universal',
+  ...routerBase,
   generate: {
     routes: authors.listURL
   },
