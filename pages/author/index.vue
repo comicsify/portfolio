@@ -15,7 +15,7 @@ export default {
 </script>
 <template>
   <div>
-    Liste des auteurs :
+    Liste des auteurs actuellement disponibles
     <ul>
       <li v-for="author in authorList">{{ author }}</li>
     </ul>

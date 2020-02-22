@@ -8,8 +8,6 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "build:pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
     "build:pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
     "generate:pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
     "generate": "nuxt generate",
