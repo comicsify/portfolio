@@ -33,3 +33,4 @@ $ yarn generate
 
 - [Typical flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox)
 - [Flex box pattern](https://tobiasahlin.com/blog/common-flexbox-patterns/)
+- [pre-rendering dynamic route](https://medium.com/javascript-in-plain-english/generate-static-websites-with-nuxt-4fd0491340e)
