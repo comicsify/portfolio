@@ -35,6 +35,29 @@ $ yarn generate
 - [Flex box pattern](https://tobiasahlin.com/blog/common-flexbox-patterns/)
 - [pre-rendering dynamic route](https://medium.com/javascript-in-plain-english/generate-static-websites-with-nuxt-4fd0491340e)
 
+## TODO
+
+- list an author portfolio
+- list a portfolio images
+- list stories from an author
+- list episode from a story
+- list image from an episode
+- make a comics reader component :
+    - scroll
+    - turbomedia
+- make a "buy the pdf" ( for a storie ) components and microservice
+- make a "subscribe" button and service
+- make a social card component
+- search tags
+- css : make a nice grid
+
+### External Microservices
+
+- comics api (List and Get episodes, tags)
+- Embeddings components
+- build and downlaod pdf
+- marketplace share
+
 ## Note from Authors 
 
 ### Thorn

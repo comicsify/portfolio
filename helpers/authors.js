@@ -1,6 +1,15 @@
 const axios = require('axios')
 require('dotenv').config()
 
+// Test
+const cloudinary = require('cloudinary').v2
+
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET
+})
+
 export async function list() {
   const client = axios.create({
     auth: {
@@ -8,6 +17,28 @@ export async function list() {
       password: process.env.API_SECRET
     }
   })
+
+  // Test
+  const folders = await cloudinary.api.resources(
+    {
+      type: 'upload',
+      prefix: 'arnold/'
+    },
+    function(error, result) {
+      console.log(error)
+    }
+  )
+  console.log(folders)
+
+  console.time('list')
+  const result = await cloudinary.search
+    .expression('folder:thorn/*')
+    .sort_by('public_id', 'desc')
+    .max_results(30)
+    .execute()
+  console.timeEnd('list')
+
+  // --------------------------------------- END OF TEST
 
   const srcUrl = `https://${process.env.API_URL}/${process.env.API_VERSION}/${process.env.CLOUD_NAME}/folders`
   const res = await client.get(srcUrl)
