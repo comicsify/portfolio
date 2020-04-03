@@ -86,3 +86,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Build files
+dist/
