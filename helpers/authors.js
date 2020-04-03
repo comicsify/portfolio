@@ -18,30 +18,6 @@ export async function list() {
     }
   })
 
-  // Test
-  const folders = await cloudinary.api.resources(
-    {
-      type: 'upload',
-      prefix: 'arnold/'
-    },
-    function(error, result) {
-      console.log(error)
-    }
-  )
-  console.log(folders)
-
-  console.time('list')
-  const result = await cloudinary.search
-    .expression('folder:thorn/*')
-    .sort_by('public_id', 'desc')
-    .max_results(30)
-    .execute()
-
-  console.log(result)
-  console.timeEnd('list')
-
-  // --------------------------------------- END OF TEST
-
   const srcUrl = `https://${process.env.API_URL}/${process.env.API_VERSION}/${process.env.CLOUD_NAME}/folders`
   const res = await client.get(srcUrl)
   const list = res.data.folders.map((folder) => folder.name)

@@ -7,6 +7,7 @@
       <h2>
         A static portfolio and blog
       </h2>
+      <div></div>
     </div>
   </div>
 </template>

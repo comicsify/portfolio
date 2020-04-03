@@ -7,17 +7,19 @@
       <section>
         <nuxt />
       </section>
-      <navbar> <nav-sidebar /></navbar>
+      <fake-list></fake-list>
     </main>
-    <footer><h2>Footer</h2></footer>
+    <footer>
+      <h2>Footer</h2>
+    </footer>
   </div>
 </template>
 <script>
-import NavSidebar from '~/components/layouts/navbar'
+import FakeList from '~/components/layouts/fake-list'
 export default {
   name: `blog-layout`,
   components: {
-    NavSidebar
+    FakeList
   }
 }
 </script>

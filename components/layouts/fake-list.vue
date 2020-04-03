@@ -1,11 +1,12 @@
 <script>
 export default {
-  name: `nav-sidebar`
+  name: `FakeList`
 }
 </script>
 <template>
   <navbar>
     <ul>
+      <li><a href="#">Aujourd'hui</a></li>
       <li><a href="#">Hier</a></li>
       <li><a href="#">Avant - hier</a></li>
       <li><a href="#">Encore avant</a></li>
