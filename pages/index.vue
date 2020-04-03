@@ -5,7 +5,7 @@
         portfolio
       </h1>
       <h2>
-        A static portfolio
+        A static portfolio and blog
       </h2>
     </div>
   </div>

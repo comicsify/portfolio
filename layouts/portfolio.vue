@@ -1,7 +1,7 @@
 <template>
   <div id="container">
     <header>
-      <h1>Header</h1>
+      <h1>Header Thorn</h1>
     </header>
     <main>
       <section>

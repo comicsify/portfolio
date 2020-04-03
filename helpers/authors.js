@@ -36,6 +36,8 @@ export async function list() {
     .sort_by('public_id', 'desc')
     .max_results(30)
     .execute()
+
+  console.log(result)
   console.timeEnd('list')
 
   // --------------------------------------- END OF TEST

@@ -19,6 +19,8 @@ $ yarn start
 $ yarn generate
 ```
 
+### Push on github
+
 ## Tuto links
 
 ### Nuxt
