@@ -30,6 +30,10 @@ export default {
         {
           name: 'Arnold',
           id: 'arnold'
+        },
+        {
+          name: 'Karibahut',
+          id: 'karibou'
         }
       ]
     }
