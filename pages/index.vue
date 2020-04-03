@@ -4,7 +4,7 @@
       <h1>portfolio</h1>
       <h2>A static portfolio and blog</h2>
       <div>
-        <author-list></author-list>
+        <author-list :authors="authors"></author-list>
       </div>
     </div>
   </div>
@@ -18,7 +18,20 @@ export default {
   },
   data() {
     return {
-      authors: ['jean', 'alice', 'esther', 'pierre']
+      authors: [
+        {
+          name: 'Thorn',
+          id: 'thorn'
+        },
+        {
+          name: 'Boulet',
+          id: 'boulet'
+        },
+        {
+          name: 'Arnold',
+          id: 'arnold'
+        }
+      ]
     }
   }
 }
