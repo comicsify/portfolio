@@ -3,7 +3,7 @@ export default {
   name: `AuthorList`,
   props: {
     authors: {
-      type: String,
+      type: Array,
       required: true
     }
   }
@@ -14,8 +14,10 @@ export default {
   <div>
     Liste d'autrices
     <ul>
-      <li v-for="author in authors" :key="author.name">
-        <nuxt-link :to="{ name: 'author-name', params: { name: author.id } }">
+      <li v-for="author in authors" :key="author.slug">
+        <nuxt-link
+          :to="{ name: 'authors-slug', params: { slug: author.slug } }"
+        >
           {{ author.name }}
         </nuxt-link>
       </li>

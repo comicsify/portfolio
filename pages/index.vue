@@ -10,7 +10,9 @@
   </div>
 </template>
 <script>
+import * as Authors from '~/helpers/authors.js'
 import AuthorList from '~/components/pages/author-list'
+
 export default {
   layout: 'blog',
   components: {
@@ -18,24 +20,13 @@ export default {
   },
   data() {
     return {
-      authors: [
-        {
-          name: 'Thorn',
-          id: 'thorn'
-        },
-        {
-          name: 'Boulet',
-          id: 'boulet'
-        },
-        {
-          name: 'Arnold',
-          id: 'arnold'
-        },
-        {
-          name: 'Karibahut',
-          id: 'karibou'
-        }
-      ]
+      authors: []
+    }
+  },
+  async asyncData(context) {
+    const authorsList = await Authors.list()
+    return {
+      authors: authorsList
     }
   }
 }
