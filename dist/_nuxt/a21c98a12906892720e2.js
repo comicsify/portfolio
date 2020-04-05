@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{368:function(e,n,t){"use strict";t.r(n);var r={name:"page-author",data:function(){return{name:"Name"}}},l=t(7),component=Object(l.a)(r,(function(){var e=this.$createElement;return(this._self._c||e)("div",[this._v("Bienvenue sur la page de "+this._s(this.name))])}),[],!1,null,null,null);n.default=component.exports}}]);
