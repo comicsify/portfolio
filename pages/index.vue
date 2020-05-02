@@ -2,15 +2,21 @@
   <div class="container">
     <div>
       <h1>{{ firstSerie.name }}</h1>
-      <div>{{ series }}{{ pages }}</div>
+      <div v-for="page in pages" :key="page.id" class="card">
+        <page-miniature :public-id="page.publicId"></page-miniature>
+      </div>
     </div>
   </div>
 </template>
 <script>
 import * as Authors from '~/helpers/authors.js'
+import pageMiniature from '~/components/pages/page-miniature'
 
 export default {
-  layout: 'blog',
+  layout: 'serie',
+  components: {
+    pageMiniature
+  },
   data() {
     return {
       series: [],
@@ -34,8 +40,6 @@ export default {
 </script>
 <style>
 .container {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background-color: bisque;
 }
 </style>

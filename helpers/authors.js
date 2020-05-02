@@ -43,9 +43,10 @@ export async function listPages(seriePath) {
     .max_results(60)
     .execute()
 
-  console.log(` == ${seriePath} ==`)
-  console.log(res)
-  return res.resources
+  return res.resources.map((image, idx) => ({
+    publicId: image.public_id,
+    id: idx
+  }))
 }
 
 /**
