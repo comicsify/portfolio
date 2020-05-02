@@ -8,6 +8,8 @@
     </div>
   </div>
 </template>
+
+
 <script>
 import * as Authors from '~/helpers/authors.js'
 import pageMiniature from '~/components/pages/page-miniature'
