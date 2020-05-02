@@ -17,7 +17,7 @@ export default {
       :publicId="publicId"
       cloud-name="cepcam"
       secure="true"
-      height="80px"
+      height="160px"
     ></cld-image>
   </div>
 </template>

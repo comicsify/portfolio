@@ -34,7 +34,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Montserrat|Oxygen&display=swap'
+          'https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap'
       }
     ]
   },
