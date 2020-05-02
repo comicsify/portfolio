@@ -1,32 +1,33 @@
 <template>
   <div class="container">
     <div>
-      <h1>portfolio</h1>
-      <h2>A static portfolio and blog</h2>
-      <div>
-        <author-list :authors="authors"></author-list>
-      </div>
+      <h1>{{ firstSerie.name }}</h1>
+      <div>{{ series }}{{ pages }}</div>
     </div>
   </div>
 </template>
 <script>
 import * as Authors from '~/helpers/authors.js'
-import AuthorList from '~/components/pages/author-list'
 
 export default {
   layout: 'blog',
-  components: {
-    AuthorList
-  },
   data() {
     return {
-      authors: []
+      series: [],
+      pages: [],
+      firstSerie: ''
     }
   },
   async asyncData(context) {
-    const authorsList = await Authors.list()
+    // just for fast prototyping, we grab the first serie
+    const series = await Authors.listSeries('Thorn')
+    const firstSerie = series[0]
+    const pages = await Authors.listPages(firstSerie.path)
+
     return {
-      authors: authorsList
+      series,
+      pages,
+      firstSerie
     }
   }
 }

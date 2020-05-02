@@ -33,6 +33,48 @@ export async function list() {
 }
 
 /**
+ *
+ * @param {string} serieName
+ * @description Return the pages of a serie from the serie name
+ */
+export async function listPages(seriePath) {
+  const res = await cloudinary.search
+    .expression(`folder:"${seriePath}/*"`)
+    .max_results(60)
+    .execute()
+
+  console.log(` == ${seriePath} ==`)
+  console.log(res)
+  return res.resources
+}
+
+/**
+ *
+ * @param {string} serieName
+ * @description Return the pages of a serie from the serie name
+ */
+
+export async function listSeries(author = 'Thorn') {
+  const pathToSeries = `${author}/series`
+  const pathToSeriesBaseLength = pathToSeries.split('/').length
+  const res = await cloudinary.search
+    .expression(`folder:${pathToSeries}/* AND  resource_type:image`)
+    .max_results(60)
+    .execute()
+
+  const arrayOfSeries = res.resources.map(
+    (image) => image.folder.split('/')[pathToSeriesBaseLength]
+  )
+  const setOfSeries = new Set(arrayOfSeries)
+  const arrayOfUniqueSeries = Array.from(setOfSeries)
+
+  return arrayOfUniqueSeries.map((serie) => ({
+    name: serie,
+    path: `${pathToSeries}/${serie}`
+  }))
+}
+
+/**
  * Get the true name of an author form her slug
  */
 
