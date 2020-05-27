@@ -45,19 +45,6 @@ export default {
   margin: auto;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  width: 60%;
-  justify-content: space-between;
-}
-
-.card {
-  margin-left: 5px;
-  margin-bottom: 10px;
-}
-
 h1 {
   margin: 10px auto 60px auto;
   width: 60%;
