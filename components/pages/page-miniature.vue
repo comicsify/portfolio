@@ -1,29 +1,32 @@
 <script>
-import { CldImage } from 'cloudinary-vue'
 export default {
   name: `page-miniature`,
-  components: {
-    CldImage
-  },
   props: {
-    publicId: { type: String, required: true }
+    src: { type: String, required: true }
   }
 }
 </script>
 
 <template>
-  <div class="page">
-    <cld-image
-      :publicId="publicId"
-      cloud-name="cepcam"
-      secure="true"
-      height="160px"
-    ></cld-image>
+  <div class="thumbnail">
+    <img v-bind:src="src" />
   </div>
 </template>
 
 <style scoped>
-.page {
-  box-shadow: 6px 10px 18px -12px rgba(0, 0, 0, 0.75);
+.thumbnail {
+  -webkit-backface-visibility: hidden;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+}
+.thumbnail img {
+  display: block;
+  max-width: 100%;
+  width: 180px;
+  transition: opacity 0.2s ease-in-out;
 }
 </style>

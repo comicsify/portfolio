@@ -2,23 +2,19 @@
   <div class="container">
     <div>
       <h1>{{ firstSerie.name }}</h1>
-      <div class="gallery">
-        <div v-for="page in pages" :key="page.id" class="card">
-          <page-miniature :public-id="page.publicId"></page-miniature>
-        </div>
-      </div>
+      <page-gallery :pages="pages"></page-gallery>
     </div>
   </div>
 </template>
 
 <script>
 import * as Authors from '~/helpers/authors.js'
-import pageMiniature from '~/components/pages/page-miniature'
-
+import * as Series from '~/helpers/series.js'
+import pageGallery from '~/components/pages/page-gallery'
 export default {
   layout: 'serie',
   components: {
-    pageMiniature
+    pageGallery
   },
   data() {
     return {
@@ -31,7 +27,7 @@ export default {
     // just for fast prototyping, we grab the first serie
     const series = await Authors.listSeries('Thorn')
     const firstSerie = series[0]
-    const pages = await Authors.listPages(firstSerie.path)
+    const pages = await Series.listPages(firstSerie.path)
 
     return {
       series,

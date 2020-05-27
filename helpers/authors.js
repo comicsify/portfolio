@@ -37,23 +37,6 @@ export async function list() {
  * @param {string} serieName
  * @description Return the pages of a serie from the serie name
  */
-export async function listPages(seriePath) {
-  const res = await cloudinary.search
-    .expression(`folder:"${seriePath}/*"`)
-    .max_results(60)
-    .execute()
-
-  return res.resources.map((image, idx) => ({
-    publicId: image.public_id,
-    id: idx
-  }))
-}
-
-/**
- *
- * @param {string} serieName
- * @description Return the pages of a serie from the serie name
- */
 
 export async function listSeries(author = 'Thorn') {
   const pathToSeries = `${author}/series`
