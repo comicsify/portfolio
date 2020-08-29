@@ -18,7 +18,6 @@ export default {
 
 <template>
   <div class="gallery">
-    <h3>-- {{ selected }} azeaeaz --</h3>
     <div v-for="page in pages" :key="page.id" class="card">
       <page-miniature
         v-on:click="selected = 12"

@@ -3,7 +3,6 @@
     <div>
       <h1>{{ firstSerie.name }}</h1>
       <page-gallery :pages="pages"></page-gallery>
-      <page-viewer :next="next" :prev="prev" :src="selected"></page-viewer>
     </div>
   </div>
 </template>
@@ -12,12 +11,11 @@
 import * as Authors from '~/helpers/authors.js'
 import * as Series from '~/helpers/series.js'
 import pageGallery from '~/components/pages/page-gallery'
-import pageViewer from '~/components/pages/page-viewer'
+
 export default {
-  layout: 'serie',
+  layout: 'thornLayout',
   components: {
-    pageGallery,
-    pageViewer
+    pageGallery
   },
   data() {
     return {
@@ -44,13 +42,6 @@ export default {
 }
 </script>
 <style>
-.container {
-  background-color: bisque;
-  height: 100%;
-  width: 50%;
-  margin: auto;
-}
-
 h1 {
   margin: 10px auto 60px auto;
   width: 60%;
