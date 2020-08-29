@@ -7,14 +7,23 @@ export default {
   },
   props: {
     pages: { type: Array, required: true }
+  },
+  data() {
+    return {
+      selected: 'no selection'
+    }
   }
 }
 </script>
 
 <template>
   <div class="gallery">
+    <h3>-- {{ selected }} azeaeaz --</h3>
     <div v-for="page in pages" :key="page.id" class="card">
-      <page-miniature :src="page.src"></page-miniature>
+      <page-miniature
+        v-on:click="selected = 12"
+        :src="page.src"
+      ></page-miniature>
     </div>
   </div>
 </template>
