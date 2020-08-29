@@ -31,8 +31,6 @@ export default {
   },
   async asyncData({ $config }) {
     // just for fast prototyping, we grab the first serie
-    console.log('----------------------')
-    console.log($config.authorName)
     const series = await Authors.listSeries($config.authorName)
     const firstSerie = series[0]
     const pages = await Series.listPages(firstSerie.path)
