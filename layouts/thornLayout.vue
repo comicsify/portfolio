@@ -17,7 +17,18 @@ export default {
   },
   data() {
     return {
-      menuItems: ['faq', 'portfolio', 'contact']
+      // FIXME use a conf file or an env file for better user experience
+      // Or read info from a database
+      menuItems: [
+        {
+          name: 'Ordre Chronologique',
+          link: '/',
+          parameters: { sorted: 'chrono' }
+        },
+        { name: 'A Propos', link: '/about' },
+        { name: 'Bonus', link: '/bonus' },
+        { name: 'Contact', link: '/contact' }
+      ]
     }
   }
 }

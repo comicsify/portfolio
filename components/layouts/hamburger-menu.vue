@@ -19,7 +19,13 @@ export default {
 <template>
   <div>
     <h2>HAMBURGER</h2>
-    {{ localItems }}
+    <ul>
+      <li v-for="(item, index) in localItems" :key="index">
+        <nuxt-link :to="{ path: item.link, query: item.parameters }">{{
+          item.name
+        }}</nuxt-link>
+      </li>
+    </ul>
   </div>
 </template>
 
