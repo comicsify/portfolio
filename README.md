@@ -19,6 +19,10 @@ $ yarn start
 $ yarn generate
 ```
 
+
+We use Cloudinary as a cdn so you should create an account for getting your CLOUD_NAME, API_EY and API_SECRET : 
+
+![Cloudinary](img/cloudinary_env.png)
 ### Push on github
 
 ## Tuto links
