@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1>{{ firstSerie.name }}</h1>
-      <page-gallery :pages="pages"></page-gallery>
+      <serie-gallery :pages="pages"></serie-gallery>
     </div>
   </div>
 </template>
@@ -10,12 +10,12 @@
 <script>
 import * as Authors from '~/helpers/authors.js'
 import * as Series from '~/helpers/series.js'
-import pageGallery from '~/components/pages/page-gallery'
+import serieGallery from '~/components/series/serie-gallery'
 
 export default {
   layout: 'thornLayout',
   components: {
-    pageGallery
+    serieGallery
   },
   data() {
     return {
