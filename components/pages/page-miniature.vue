@@ -2,7 +2,10 @@
 export default {
   name: `page-miniature`,
   props: {
-    src: { type: String, required: true }
+    src: {
+      type: String,
+      required: true
+    }
   }
 }
 </script>

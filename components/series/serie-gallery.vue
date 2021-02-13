@@ -1,7 +1,7 @@
 <script>
 import pageMiniature from '~/components/pages/page-miniature'
 export default {
-  name: `page-gallery`,
+  name: `serie-gallery`,
   components: {
     pageMiniature
   },
