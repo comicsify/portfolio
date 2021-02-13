@@ -6,6 +6,7 @@
     <nav>
       <hamburger-menu v-bind:items="menuItems" />
     </nav>
+    <footer>Thorn 2020</footer>
   </div>
 </template>
 <script>
